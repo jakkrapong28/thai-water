@@ -1,0 +1,30 @@
+{
+  "name": "thai-water-monitor",
+  "version": "1.0.0",
+  "description": "ระบบติดตามระดับน้ำ คลอง สถานีสูบน้ำ แผนที่ ลมฟ้าอากาศพายุ กล้องวงจรปิด CCTV ภาครัฐ และน้ำทะเลหนุนสูงทั่วประเทศ",
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "db:check": "node --env-file-if-exists=.env.local scripts/check-mongodb.mjs",
+    "db:migrate:sqlite": "node --env-file-if-exists=.env.local scripts/migrate-sqlite-to-mongodb.mjs"
+  },
+  "keywords": [
+    "thaiwater",
+    "flood-monitoring",
+    "cctv",
+    "water-crisis",
+    "high-tide"
+  ],
+  "author": "Antigravity",
+  "license": "MIT",
+  "dependencies": {
+    "leaflet": "^1.9.4",
+    "lucide-react": "^1.49.0",
+    "mongodb": "^7.5.0",
+    "next": "^16.3.8",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "sharp": "^0.35.5"
+  }
+}

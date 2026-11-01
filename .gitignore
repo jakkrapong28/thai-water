@@ -1,0 +1,12 @@
+node_modules/
+.next/
+data/community/
+.env*
+!.env.example
+
+# Build & OS files
+.DS_Store
+output/
+tmp/
+*.log
+.vercel
